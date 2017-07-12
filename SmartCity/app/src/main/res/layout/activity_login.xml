@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coolblues.smartcity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_below="@+id/registerButtonEnter"
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logomain"/>
+
+    <EditText
+        android:id="@+id/usernameEnter"
+        android:layout_marginTop="90dp"
+        android:hint="Enter username"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="45dp" />
+
+    <EditText
+        android:id="@+id/passwordEnter"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/usernameEnter"
+        android:hint="Enter password"
+        android:inputType="numberPassword"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="45dp" />
+
+    <CheckBox
+        android:id="@+id/rememberPasswordEnter"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/passwordEnter"
+        android:text="Remember Password?"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/logInButtonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rememberPasswordEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onButtonClick"
+        android:text="Log in" />
+
+    <Button
+        android:id="@+id/registerButtonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logInButtonEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="onButtonClick"
+        android:text="Haven't registered? Goto sign up page." />
+
+</RelativeLayout>
